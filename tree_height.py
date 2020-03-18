@@ -43,8 +43,8 @@ def tree_height(root, nodes):
 #      /  \
 #     0    2
 # nodes = [[], [3,4], [], [], [0,2]]
-# height = 3
 # as shown in array nodes, [0,2] contains child node 0 and 2 of node 4 (4 = index of [0,2] in array nodes)
+# height = 3
 def compute_height(n, parents):
     # build an array nodes to store the children of node k with k being the index of array nodes
     # and determine the root of the tree

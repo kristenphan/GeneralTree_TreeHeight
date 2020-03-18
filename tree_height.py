@@ -33,7 +33,7 @@ def tree_height(root, nodes):
     return height
 
 
-# this function builds an arbitrary tree and returns it
+# this function builds an arbitrary tree and returns its height
 # eg. n = 5
 # parents = 4 -1 4 1 1
 # tree is visualized as
@@ -43,9 +43,10 @@ def tree_height(root, nodes):
 #      /  \
 #     0    2
 # nodes = [[], [3,4], [], [], [0,2]]
+# height = 3
 # as shown in array nodes, [0,2] contains child node 0 and 2 of node 4 (4 = index of [0,2] in array nodes)
 def compute_height(n, parents):
-    # build an array nodes of store the children of node k with k being the index of array nodes
+    # build an array nodes to store the children of node k with k being the index of array nodes
     # and determine the root of the tree
     nodes = [[] for _ in range(n)]
     root = float("inf")
